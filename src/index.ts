@@ -25,6 +25,7 @@ server.use((req, res, next) => {
 }
 
 )
+server.get('/',(req,res)=>{res.send('ok')})
 server.get('/frases/:frase', async(req, res) => {
    let frases=await pensador(req.params.frase)
    res.send(frases)
