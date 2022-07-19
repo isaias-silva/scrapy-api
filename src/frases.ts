@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer'
 export default async function pensador(tema:string) {
     
     
-        const url = `https://www.pensador.com/${tema}/`
+        const url = `https://www.pensador.com/${tema}/` //a
         const browser = await puppeteer.launch({headless:true});
     
         const page = await browser.newPage();
